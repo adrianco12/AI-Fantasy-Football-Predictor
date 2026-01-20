@@ -1,20 +1,13 @@
 # NFL Fantasy Performance Predictor
 
-## Project Overview
-A neural network predicts NFL players’ future fantasy performance using historical statistics. The model captures complex factors like usage trends, injuries, and team context to provide accurate projections and improve fantasy draft decisions.
+## Overview
+This project develops a neural network to predict NFL players’ fantasy points for upcoming seasons using historical statistics. Fantasy football requires accurate projections for informed draft and lineup decisions, and traditional methods often fail to capture complex interactions between player stats and team context.
 
-## Problem Statement
-Fantasy football decisions rely on accurate player projections, which are influenced by many interacting factors. Traditional linear models often fail to capture these nonlinear relationships. This project uses a fully connected neural network for regression to predict next-season performance based on past data.
+## How It Works
+The model is a fully connected feed-forward neural network implemented in TensorFlow/Keras. Input features include passing, rushing, and receiving stats, player age, usage trends, injury history, and position (one-hot encoded). The network uses two hidden layers with ReLU activation and dropout for regularization, and outputs a single numeric value representing projected fantasy points. The model is trained using backpropagation with the Adam optimizer and evaluated using Mean Absolute Error (MAE) and R-squared metrics.
 
-## Features
-- Uses historical player statistics as input
-- Accounts for nonlinear interactions between factors
-- Regression-based prediction for precise fantasy point estimates
-- Generalizes across thousands of player seasons
+## Data
+The dataset includes NFL player statistics from 1990 to 2024, sourced from Kaggle and Pro Football Reference. Data preprocessing includes cleaning, removing incomplete records, standardizing features, and encoding categorical variables to ensure compatibility with the neural network.
 
-## Technologies
-- Python
-- TensorFlow / Keras
-- Pandas, NumPy
-- Scikit-learn
-- Matplotlib / Seaborn (for visualizations)
+## Why This Project
+Fantasy performance depends on nonlinear and interacting factors that simple linear models cannot capture. By leveraging neural networks, this project produces accurate, generalizable projections to assist fans in making better strategic decisions during fantasy drafts, enhancing engagement and competitiveness.

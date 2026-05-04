@@ -11,7 +11,8 @@ The model is a fully connected feed-forward neural network implemented in Tensor
 ### 1. Feed-Forward Network
 The model is a **Feed-Forward Neural Network**. This simply means information flows in one strict direction:
 * **Input:** It takes in raw player stats (like past performance or matchups).
-* **Processing:** It passes that data through "hidden layers" where the heavy lifting happens.
+* **Processing:** It passes that data through "hidden layers". These are layers of neurons that sit between the input and the final guess. They don't just look at stats individually; they combine them to find relationships—like how a specific "Weather" input might change the importance of a "Passing Yards" input.
+* **Output:** It delivers the final prediction.
 * **Output:** It delivers the final prediction.
 
 ### 2. How a Digital "Neuron" Works

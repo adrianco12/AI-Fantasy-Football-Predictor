@@ -3,14 +3,10 @@
 ## Overview
 This project develops a neural network to predict NFL players’ fantasy points for upcoming seasons using historical statistics. Fantasy football requires accurate projections for informed draft and lineup decisions, and traditional methods often fail to capture complex interactions between player stats and team context.
 
-## How It Works
-The model is a fully connected feed-forward neural network implemented in TensorFlow/Keras. Input features include passing, rushing, and receiving stats, player age, usage trends, injury history, and position (one-hot encoded). The network uses two hidden layers with ReLU activation and dropout for regularization, and outputs a single numeric value representing projected fantasy points. The model is trained using backpropagation with the Adam optimizer and evaluated using Mean Absolute Error (MAE) and R-squared metrics. Read this [report](Report.pdf) for an in-depth analysis on the model.
-
-## How the Fantasy Points Prediction Model Works
-
-Think of this model as a digital "brain" designed to predict how many points a player will score. Here is the breakdown of how it thinks:
-
 ---
+
+## How It Works
+The model is a fully connected feed-forward neural network implemented in TensorFlow/Keras. Input features include passing, rushing, and receiving stats, player age, usage trends, injury history, and position (one-hot encoded). The network uses two hidden layers with ReLU activation and dropout for regularization, and outputs a single numeric value representing projected fantasy points. The model is trained using backpropagation with the Adam optimizer and evaluated using Mean Absolute Error (MAE) and R-squared metrics. Read this [report](Report.pdf) for an in-depth analysis on the model.  
 
 ### 1. Feed-Forward Network
 The model is a **Feed-Forward Neural Network**. This simply means information flows in one strict direction:

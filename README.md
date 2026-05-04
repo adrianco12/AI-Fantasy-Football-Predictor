@@ -13,7 +13,6 @@ The model is a **Feed-Forward Neural Network**. This simply means information fl
 * **Input:** It takes in raw player stats (like past performance or matchups).
 * **Processing:** It passes that data through "hidden layers". These are layers of neurons that sit between the input and the final guess. They don't just look at stats individually; they combine them to find relationships—like how a specific "Weather" input might change the importance of a "Passing Yards" input.
 * **Output:** It delivers the final prediction.
-* **Output:** It delivers the final prediction.
 
 ### 2. How a Digital "Neuron" Works
 The model is made of tiny processing units called **neurons**, inspired by the human brain.
